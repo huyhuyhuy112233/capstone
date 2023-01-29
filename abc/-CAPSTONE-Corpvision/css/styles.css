@@ -1606,9 +1606,9 @@
   
   /* review  */
   .testimonials {
+    padding-top: 100px;
     background-color: #f8f9fa;
   }
-  
   .testimonials__content {
     padding: 40px 30px;
     max-width: 900px;
@@ -1655,25 +1655,46 @@
     color: #666;
     opacity: 0.8;
   }
-  
-  .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 30px;
+  /* subscribe */
+.subscribe{
+    background-image: url(../images/map.png);
+    background-color: #151421;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  
-  .owl-theme .owl-dots .owl-dot span {
-    background-color: #213364;
-    opacity: 0.5;
-    transition: all 0.3s;
-    margin: 6px 8px;
+  .sub-footer{
+    margin-top: 25px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    max-width: 550px;
+    margin: auto;
   }
-  
-  .owl-theme .owl-dots .owl-dot.active span,
-  .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #213364;
-    transform: scale(1.5);
-    opacity: 1;
+  .subscribe .input-group-text {
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
+    padding: 0 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
-  
+  .subscribe input[type="email"] {
+    margin: 0px 17px;
+    padding: 14px 20px;
+    font-size: 16px;
+    line-height: 28px;
+    outline: none;
+    border-radius: 0;
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.15);
+    border-left: none;
+  }
+
+
+
+
   /* FOOTER  */
   footer {
     background-color: #151421;
@@ -1801,4 +1822,23 @@
   }
   .copyright i {
     color: white;
+  }
+  #moveToTop {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    line-height: 36px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 88;
+    font-size: 1.125rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+  }
+  
+  #moveToTop:hover,
+  #moveToTop:focus {
+    border: none;
+    box-shadow: none;
   }
